@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="8" total="9" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-01-03T17:27:14 IST" name="Default suite" finished-at="2024-01-03T17:27:18 IST" duration-ms="3654">
+    <groups>
+    </groups>
+    <test started-at="2024-01-03T17:27:14 IST" name="Default test" finished-at="2024-01-03T17:27:18 IST" duration-ms="3654">
+      <class name="com.xyz.petstore.tests.PetTest">
+        <test-method is-config="true" signature="setupSpecification()[pri:0, instance:com.xyz.petstore.tests.PetTest@69b2283a]" started-at="2024-01-03T17:27:14 IST" name="setupSpecification" finished-at="2024-01-03T17:27:15 IST" duration-ms="759" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupSpecification -->
+        <test-method signature="verifyAddNewPet()[pri:0, instance:com.xyz.petstore.tests.PetTest@69b2283a]" started-at="2024-01-03T17:27:15 IST" name="verifyAddNewPet" finished-at="2024-01-03T17:27:18 IST" duration-ms="2831" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddNewPet -->
+      </class> <!-- com.xyz.petstore.tests.PetTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

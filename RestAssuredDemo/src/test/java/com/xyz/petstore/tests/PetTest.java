@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.List;
 
 import static io.restassured.RestAssured.given;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
@@ -19,7 +20,8 @@ public class PetTest extends Base {
     File fileToUpload ;
     Pet petObj = new Pet();
     Category categoryObj  = new Category(15,"aman");
-    Tag tagObj = new Tag(0,"xyz");
+    List<Tag> tagObjLst = new ArrayList<Tag>();
+    
 
     @Test
     //Verify the Status Code using query parameter
@@ -95,11 +97,16 @@ public class PetTest extends Base {
     public void verifyAddNewPet() {
         petObj.setId(2);
         petObj.setCategory(categoryObj);
-        //petObj.setTags(tagObj);
-        ArrayList<String> list = new ArrayList<>();
-        list.add("abc");
-        petObj.setPhotoUrls(list);
+        
+        tagObjLst.add(new Tag(7, "random"));
+        petObj.setTags(tagObjLst);
+        
+        ArrayList<String> photoLst = new ArrayList<>();
+        photoLst.add("abc");
+        petObj.setPhotoUrls(photoLst);
+        
         petObj.setStatus("available");
+       
         Response res =
                 given()
                         .spec(requestSpec)
