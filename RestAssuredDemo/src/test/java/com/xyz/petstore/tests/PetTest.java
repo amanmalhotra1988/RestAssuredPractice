@@ -5,6 +5,7 @@ import com.xyz.petstore.pojo.Category;
 import com.xyz.petstore.pojo.Pet;
 import com.xyz.petstore.pojo.Tag;
 import io.restassured.response.Response;
+import org.mozilla.javascript.serialize.ScriptableOutputStream;
 import org.testng.annotations.Test;
 
 import java.io.File;
@@ -34,6 +35,7 @@ public class PetTest extends Base {
                 .get("findByStatus")
         .then()
                 .spec(responseSpec);
+
 
     }
     @Test
@@ -179,6 +181,19 @@ public class PetTest extends Base {
         System.out.println(res.statusCode());
         System.out.println(res.headers());
         res.prettyPrint();
+    }
+
+    @Test
+    //Verify the Deserialization
+    public void verifyFindByStatusUsingDeserialization() {
+
+        Pet[] petObj = given()
+                .spec(requestSpec)
+                .queryParam("status", "sold")
+        .when()
+                .get("findByStatus").as(Pet[].class);
+        //System.out.println(petObj.getId());
+
     }
 
 }

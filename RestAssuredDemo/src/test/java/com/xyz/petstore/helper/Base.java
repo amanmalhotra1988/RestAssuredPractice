@@ -3,6 +3,7 @@ package com.xyz.petstore.helper;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
+import io.restassured.filter.log.LogDetail;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
 import org.testng.annotations.BeforeClass;
@@ -20,7 +21,9 @@ public class Base {
                 .addHeader("content-type","application/xml")
                 .build();
         responseSpec = (ResponseSpecification) new ResponseSpecBuilder()
-                .expectStatusCode(200).build();
+                .expectStatusCode(200)
+                .log(LogDetail.ALL)
+                .build();
 
 
     }
