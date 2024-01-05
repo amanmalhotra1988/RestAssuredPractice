@@ -8,19 +8,23 @@ import java.util.Map;
 //@Generated("jsonschema2pojo")
 public class Pet {
 
-    private Integer id;
+    private Long id;
     private Category category;
     private String name;
     private List<String> photoUrls;
     private List<Tag> tags;
     private String status;
     private Map<String, Object> additionalProperties = new LinkedHashMap<String, Object>();
+    
+    public Pet() {
+    	
+    }
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

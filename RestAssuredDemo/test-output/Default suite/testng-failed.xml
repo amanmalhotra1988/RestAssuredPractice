@@ -6,7 +6,7 @@
       <class name="com.xyz.petstore.tests.PetTest">
         <methods>
           <include name="setupSpecification"/>
-          <include name="verifyAddNewPet"/>
+          <include name="verifyFindByStatusUsingDeserialization"/>
         </methods>
       </class> <!-- com.xyz.petstore.tests.PetTest -->
     </classes>

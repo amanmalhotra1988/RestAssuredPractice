@@ -103,7 +103,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.xyz.petstore.tests.PetTest" class="method navigator-link" hash-for-method="verifyAddNewPet">verifyAddNewPet</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.xyz.petstore.tests.PetTest" class="method navigator-link" hash-for-method="verifyFindByStatusUsingDeserialization">verifyFindByStatusUsingDeserialization</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -126,9 +126,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyAddNewPet">
-                  </a> <!-- verifyAddNewPet -->
-                  <span class="method-name">verifyAddNewPet</span>
+                  <a name="verifyFindByStatusUsingDeserialization">
+                  </a> <!-- verifyFindByStatusUsingDeserialization -->
+                  <span class="method-name">verifyFindByStatusUsingDeserialization</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -136,7 +136,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/gl/sxfvlyrd7g9511qjxch0dmwc0000gn/T/testng-eclipse-677368189/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/gl/sxfvlyrd7g9511qjxch0dmwc0000gn/T/testng-eclipse-1962627110/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -147,7 +147,7 @@
     &lt;classes&gt;
       &lt;class name=&quot;com.xyz.petstore.tests.PetTest&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;verifyAddNewPet&quot;/&gt;
+          &lt;include name=&quot;verifyFindByStatusUsingDeserialization&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- com.xyz.petstore.tests.PetTest --&gt;
     &lt;/classes&gt;
@@ -191,9 +191,9 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyAddNewPet')
+data.setCell(0, 1, 'verifyFindByStatusUsingDeserialization')
 data.setCell(0, 2, 'com.xyz.petstore.tests.PetTest')
-data.setCell(0, 3, 2831);
+data.setCell(0, 3, 2758);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
@@ -213,27 +213,29 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">8 ignored methods</span>
+            <span class="header-content">9 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">com.xyz.petstore.tests.PetTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">verifyFindByStatus2</span>
+                <span class="ignored-method-name">verifyAddNewPet1</span>
                 <br/>
-                <span class="ignored-method-name">verifyPetId</span>
+                <span class="ignored-method-name">verifyFindByStatus3</span>
                 <br/>
                 <span class="ignored-method-name">verifyFindByStatus</span>
                 <br/>
                 <span class="ignored-method-name">verifyAddNewPetImage</span>
                 <br/>
+                <span class="ignored-method-name">verifyAddNewPet</span>
+                <br/>
                 <span class="ignored-method-name">verifyjsonSchema</span>
                 <br/>
-                <span class="ignored-method-name">verifyFindByStatus3</span>
+                <span class="ignored-method-name">verifyFindByStatus2</span>
+                <br/>
+                <span class="ignored-method-name">verifyPetId</span>
                 <br/>
                 <span class="ignored-method-name">verifyDeletePetId</span>
-                <br/>
-                <span class="ignored-method-name">verifyAddNewPet1</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -251,8 +253,8 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">verifyAddNewPet</span>
-                <span class="method-start">768 ms</span>
+                <span class="method-name">verifyFindByStatusUsingDeserialization</span>
+                <span class="method-start">608 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

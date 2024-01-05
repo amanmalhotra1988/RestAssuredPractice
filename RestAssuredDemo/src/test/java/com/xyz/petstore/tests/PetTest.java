@@ -97,7 +97,7 @@ public class PetTest extends Base {
     @Test
     //Validate POST Request with body
     public void verifyAddNewPet() {
-        petObj.setId(2);
+        petObj.setId(2L);
         petObj.setCategory(categoryObj);
         
         tagObjLst.add(new Tag(7, "random"));
@@ -192,7 +192,9 @@ public class PetTest extends Base {
                 .queryParam("status", "sold")
         .when()
                 .get("findByStatus").as(Pet[].class);
-        //System.out.println(petObj.getId());
+        System.out.println(petObj[1].getId());
+        System.out.println(petObj[1].getName());
+
 
     }
 

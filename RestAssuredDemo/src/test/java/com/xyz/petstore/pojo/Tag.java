@@ -10,6 +10,10 @@ public class Tag {
     private Integer id;
     private String name;
     private Map<String, Object> additionalProperties = new LinkedHashMap<String, Object>();
+    
+    public Tag() {
+    	
+    }
 
     public Tag( int id, String name) {
         this.id = id;

@@ -10,6 +10,10 @@ public class Category {
     private int id;
     private String name;
     private Map<String, Object> additionalProperties = new LinkedHashMap<String, Object>();
+    
+    public Category(){
+    	
+    }
 
     public Category( int id, String name) {
         this.id = id;
