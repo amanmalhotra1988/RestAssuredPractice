@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="9" total="10" passed="1" failed="0" skipped="0">
+<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-05T18:02:08 IST" name="Default suite" finished-at="2024-01-05T18:02:12 IST" duration-ms="3396">
+  <suite started-at="2024-02-27T16:45:35 IST" name="Default suite" finished-at="2024-02-27T16:45:38 IST" duration-ms="3042">
     <groups>
     </groups>
-    <test started-at="2024-01-05T18:02:08 IST" name="Default test" finished-at="2024-01-05T18:02:12 IST" duration-ms="3396">
-      <class name="com.xyz.petstore.tests.PetTest">
-        <test-method is-config="true" signature="setupSpecification()[pri:0, instance:com.xyz.petstore.tests.PetTest@22a637e7]" started-at="2024-01-05T18:02:08 IST" name="setupSpecification" finished-at="2024-01-05T18:02:09 IST" duration-ms="600" status="PASS">
+    <test started-at="2024-02-27T16:45:35 IST" name="Default test" finished-at="2024-02-27T16:45:38 IST" duration-ms="3042">
+      <class name="com.xyz.petstore.tests.PayloadFromFileDemo">
+        <test-method signature="readPayloadJSON()[pri:0, instance:com.xyz.petstore.tests.PayloadFromFileDemo@1ffe63b9]" started-at="2024-02-27T16:45:35 IST" name="readPayloadJSON" finished-at="2024-02-27T16:45:38 IST" duration-ms="2991" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setupSpecification -->
-        <test-method signature="verifyFindByStatusUsingDeserialization()[pri:0, instance:com.xyz.petstore.tests.PetTest@22a637e7]" started-at="2024-01-05T18:02:09 IST" name="verifyFindByStatusUsingDeserialization" finished-at="2024-01-05T18:02:12 IST" duration-ms="2758" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyFindByStatusUsingDeserialization -->
-      </class> <!-- com.xyz.petstore.tests.PetTest -->
+        </test-method> <!-- readPayloadJSON -->
+      </class> <!-- com.xyz.petstore.tests.PayloadFromFileDemo -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

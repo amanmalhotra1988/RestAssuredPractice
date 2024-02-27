@@ -18,7 +18,7 @@ public class Base {
         requestSpec = new RequestSpecBuilder()
                 .setBaseUri("https://petstore.swagger.io/v2/")
                 .setBasePath("pet/")
-                .addHeader("content-type","application/xml")
+                .addHeader("content-type","application/json")
                 .build();
         responseSpec = (ResponseSpecification) new ResponseSpecBuilder()
                 .expectStatusCode(200)

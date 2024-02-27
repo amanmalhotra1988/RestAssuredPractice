@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.xyz.petstore.tests.PetTest">
+      <class name="com.xyz.petstore.tests.PayloadFromFileDemo">
         <methods>
-          <include name="setupSpecification"/>
-          <include name="verifyFindByStatusUsingDeserialization"/>
+          <include name="readPayloadJSON"/>
         </methods>
-      </class> <!-- com.xyz.petstore.tests.PetTest -->
+      </class> <!-- com.xyz.petstore.tests.PayloadFromFileDemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
